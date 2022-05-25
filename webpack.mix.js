@@ -15,4 +15,5 @@ mix.js("resources/js/app.js", "public/js")
     .js("resources/js/costume.js", "public/js")
     .js("resources/js/crud.js", "public/js")
     .js("resources/js/components.js", "public/js")
+    .js("resources/js/chart.js", "public/js")
     .postCss("resources/css/app.css", "public/css");
