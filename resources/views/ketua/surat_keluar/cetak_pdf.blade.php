@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surat Masuk</title>
+    <title>Surat Keluar</title>
     <link rel="stylesheet" href="{{ public_path('/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ public_path('/assets/css/app.min.css') }}">
 
@@ -41,7 +41,7 @@
         <div>
             <p class="text-center m-0 text-uppercase" style="font-size: 18px">Gereja Injili DI Indonesia (GIDI)</p>
             <p class="text-center m-0 text-uppercase" style="font-size: 18px">Jemaat Gratia Waena</p>
-            <p class="text-center m-0" style="font-size: 18px">Laporan Surat Masuk</p>
+            <p class="text-center m-0" style="font-size: 18px">Laporan Surat Keluar</p>
             <hr class="hr-1">
             <hr class="hr-2">
         </div>
@@ -53,8 +53,8 @@
                         <th>No. Surat</th>
                         <th>Tgl. Surat</th>
                         <th>Perihal</th>
-                        <th>Asal Surat</th>
-                        <th>Tgl. Masuk</th>
+                        <th>Tujuan Surat</th>
+                        <th>Tgl. Keluar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,9 +66,9 @@
                                 {{ Carbon::createFromFormat('Y-m-d', $item->surat->tgl_surat)->isoFormat('D MMM Y') }}
                             </td>
                             <td>{{ $item->surat->perihal }}</td>
-                            <td>{{ $item->asal_surat }}</td>
+                            <td>{{ $item->tujuan_surat }}</td>
                             <td>
-                                {{ Carbon::createFromFormat('Y-m-d', $item->tgl_masuk)->isoFormat('D MMM Y') }}
+                                {{ Carbon::createFromFormat('Y-m-d', $item->tgl_keluar)->isoFormat('D MMM Y') }}
                             </td>
                         </tr>
                     @endforeach

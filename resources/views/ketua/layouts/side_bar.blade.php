@@ -16,13 +16,13 @@
                  </li>
                  <li>
                      <a href="{{ route('ketua.surat_masuk') }}">
-                         <i data-feather="home"></i>
+                         <i data-feather="file-plus"></i>
                          <span data-key="t-Surat_Masuk">Surat Masuk</span>
                      </a>
                  </li>
                  <li>
                      <a href="{{ route('ketua.surat_keluar') }}">
-                         <i data-feather="home"></i>
+                         <i data-feather="file-minus"></i>
                          <span data-key="t-Surat_Keluar">Surat Keluar</span>
                      </a>
                  </li>

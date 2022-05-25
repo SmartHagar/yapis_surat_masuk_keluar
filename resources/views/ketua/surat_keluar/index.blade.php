@@ -17,7 +17,7 @@ $folder = 'surat_keluar';
 @endsection
 
 @section('title-right')
-    <button type="button" class="btn btn-outline-primary" id="tambah">Tambah Data</button>
+    <a href="{{ route('cetak_pdf_surat_keluar') }}" class="btn btn-outline-primary" target="blank">Cetak</a>
 @endsection
 
 @section('content')

@@ -1,3 +1,5 @@
+import "animate.css";
+
 // light or dark mode
 // querySelector id mode-setting-btn
 const modeSettingBtn = document.querySelector("#mode-setting-btn");
